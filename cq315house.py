@@ -180,6 +180,10 @@ def export_cq315room():
 
     start_time = time.time()
     cq315room = cq315room.append(mongo_cq315roomdf)
+<<<<<<< HEAD
+=======
+    # cq315room = pd.concat([export_cq315room, mongo_cq315roomdf])
+>>>>>>> origin/main
     cq315room.drop_duplicates(subset=['id'], keep='last', inplace=True)
     end_time = time.time()
     total_time = end_time - start_time
